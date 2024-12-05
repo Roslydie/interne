@@ -100,7 +100,7 @@
                         <button class="btn-import" id="importbutton" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="fa fa-upload"></i> Importer
                         </button>
-                        <button class="btn-crer"> <a href="/documents/create">Creer un nouveau document </a></button>
+                        <button class="btn-crer">Créer un nouveau document</button>
                     </div>
                 </div>
                 <div class="d-flex flex-wrap gap-3">

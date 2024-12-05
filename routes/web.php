@@ -46,12 +46,6 @@ Route::get('sign-in', Login::class)->middleware('guest')->name('login');
 
 Route::get('user-profile', UserProfile::class)->middleware('auth')->name('user-profile');
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
-Route::get('/documents/create', [DocumentController::class, 'create'])->name('documents.create');
-Route::post('/documents', [DocumentController::class, 'store'])->name('documents.store');
-Route::get('/documents/{document}/edit', [DocumentController::class, 'edit'])->name('documents.edit');
-Route::put('/documents/{document}', [DocumentController::class, 'update'])->name('documents.update');
-
-
 
 
 Route::group(['middleware' => 'auth'], function () {
