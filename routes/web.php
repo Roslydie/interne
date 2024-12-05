@@ -5,6 +5,7 @@ use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Billing;
+use App\Http\Livewire\Documents;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\ExampleLaravel\UserManagement;
@@ -50,6 +51,7 @@ Route::get('user-management', UserManagement::class)->middleware('auth')->name('
 Route::group(['middleware' => 'auth'], function () {
 Route::get('dashboard', Dashboard::class)->name('dashboard');
 Route::get('billing', Billing::class)->name('billing');
+Route::get('documents', Documents::class)->name('documents');
 Route::get('profile', Profile::class)->name('profile');
 Route::get('tables', Tables::class)->name('tables');
 Route::get('notifications', Notifications::class)->name("notifications");
